@@ -14,40 +14,112 @@
   </head>
   <body>
     <!-- navbar-start -->
-    <p>navbar</p>
-    <p>image</p>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <button
+        class="navbar-toggler no-border"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
+        aria-label="Toggle navigation">
+          <span
+          class="navbar-toggler-icon">
+          </span>
+        </button>
+        <img
+        class="logo"
+        src="./assets/images for use on website/Logo.svg"
+        alt="Pot Logo"
+        >
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div>
+            <button
+            type="button"
+            class="btn-close mt-4 ms-2"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+              <li class="nav-item d-flex justify-content-center">
+                <a
+                class="nav-link active"
+                href="#">COOKWARE</a>
+              </li>
+              <li class="nav-item d-flex justify-content-center">
+                <a
+                class="nav-link active"
+                href="#">BAKEWARE</a>
+              </li>
+              <li class="nav-item d-flex justify-content-center">
+                <a
+                class="nav-link active"
+                href="#">ACCESSORIES</a>
+              </li>
+              <li class="nav-item d-flex justify-content-center">
+                <a
+                class="nav-link active"
+                href="#">SALE</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
     <!-- navbar-end -->
 
     <!-- hero-start -->
-    <p>background image</p>
-    <p>text</p>
+    <div class="hero-grid">
+      <div
+      class="hero-img"
+      alt="woman cooking"
+      ></div>
+      <div class="hero-text-div">
+        <p class="hero-text">Cookware built to last</p>
+      </div>
+    </div>
     <!-- hero-end -->
 
     <!-- sale-start -->
-    <p>sale text</p>
+    <div class="sale-bg">
+      <p class="sale-text">Sale $10 off when you spend $150</p>
+    </div>
     <!-- sale-end -->
 
     <!-- cooking-start -->
-    <h1>Start Cooking</h1>
-
     <div>
-      <p>image</p>
-      <p>Cast Iron Pot</p>
+      <h2 class="text-center">Start Cooking</h2>
     </div>
 
-    <div>
-      <p>image</p>
-      <p>Stock Pot</p>
-    </div>
-
-    <div>
-      <p>image</p>
-      <p>Sauce Pan</p>
-    </div>
-
-    <div>
-      <p>image</p>
-      <p>Accessories</p>
+    <div class="cooking-grid">
+      <div class="cooking-img">
+        <img src="./assets/images for use on website/StartCooking1.jpeg" alt="Cast Iron Pot">
+      </div>
+      <div class="cooking-text">
+        <p>Cast Iron Pot</p>
+      </div>
+  
+      <div class="cooking-img">
+        <img src="./assets/images for use on website/StartCooking2.jpeg" alt="Stock Pot">
+      </div>
+      <div class="cooking-text">
+        <p>Stock Pot</p>
+      </div>
+  
+      <div class="cooking-img">
+        <img src="./assets/images for use on website/StartCooking3.jpeg" alt="Sauce Pan">
+      </div>
+      <div class="cooking-text">
+        <p>Sauce Pan</p>
+      </div>
+  
+      <div class="cooking-img">
+        <img src="./assets/images for use on website/StartCooking4.jpeg" alt="Accessories">
+      </div>
+      <div class="cooking-text">
+        <p>Accessories</p>
+      </div>
     </div>
     <!-- cooking-end -->
 
