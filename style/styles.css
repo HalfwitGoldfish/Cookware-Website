@@ -3,32 +3,44 @@ url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,20
 
 /* font-sizes-start */
 h1 {
-    font-family: roboto-bold;
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
     font-size: 60px;
 }
 
 h2 {
-    font-family: roboto-medium;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
     font-size: 36px;
 }
 
 h3 {
-    font-family: roboto-bold;
-    font-size: 40px;
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
 }
 
 h4 {
-    font-family: roboto-regular;
-    font-size: 48px;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
 }
 
 h5 {
-    font-family: roboto-medium;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
     font-size: 20px;
 }
 
 p {
-    font-family: roboto-regular;
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
     font-size: 16px;
 }
 /* font-sizes-start */
@@ -44,6 +56,14 @@ p {
 
 .text-center {
     text-align: center;
+}
+
+.no-radius {
+    border-radius: 0;
+}
+
+.bold {
+    font-weight: bold;
 }
 /* general-end */
 
@@ -93,6 +113,12 @@ p {
 
 .sale-text {
     text-align: center;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 /* sale-end */
 
@@ -110,10 +136,23 @@ p {
     margin-top: 20px;
 }
 
-.cooking-img img{
+.cooking-img {
     border-radius: 10px;
+    overflow: hidden;
+}
+
+.cooking-img img{
     aspect-ratio: 1/1;
     width: 100%;
+}
+
+.cooking-img img:hover{
+    transition: transform;
+    transform: scale(1.1);
+}
+
+.cooking-title {
+    margin: 1.5em auto;
 }
 /* cooking-end */
 
@@ -126,6 +165,27 @@ p {
 .arrivals-img img{
     aspect-ratio: 4/3;
     width: 100%;
+}
+
+.arrivals-title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.fall-collect {
+    margin-top: 15px;
+}
+
+.fall-p {
+    margin-bottom: 5px;
+}
+
+.color-picker {
+    margin-bottom: 60px;
+}
+
+.arrivals-img img:hover{
+    -webkit-filter: brightness(85%);
 }
 /* arrivals-end */
 
@@ -151,7 +211,26 @@ p {
 }
 
 .shop-btn {
+    color: #292828;
+    background-color: transparent;
+    border: solid #292828 1px;
     margin-bottom: 10px;
+    width: 10em;
+    height: 2.5em;
+}
+
+.shop-btn:hover {
+    background-color: #292828;
+    color: white;
+}
+
+.best-title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.bake-p {
+    margin-bottom: 7em;
 }
 /* best-end */
 
@@ -181,11 +260,30 @@ p {
 
 .danielle {
     background-image: url("../assets/images for use on website/Reviews2.jpg");
+    background-position: center;
 }
 
 .michelle {
     background-image: url("../assets/images for use on website/Reviews3.jpg");
     margin-bottom: 0px;
+}
+
+.review-title {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.review {
+    margin-top: 1em;
+}
+
+.review-p {
+    margin: 0.5em auto;
+    width: 85%;
+}
+
+.review-name {
+    margin-bottom: 2.5em;
 }
 /* reviews-end */
 
@@ -208,13 +306,54 @@ p {
     padding-bottom: 80px;
 }
 
-.subscribe-btn {
-    background-color: #1e2c20;
-    color: white;
-    border: solid white 1px;
+.email-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 2.5em);
+    gap: 10px;
+    margin: 0 auto;
+    width: 90%;
 }
 
-.sub-btn-flex {
+.subscribe-btn {
+    background-color: transparent;
+    color: white;
+    border: solid white 1px;
+    border-radius: 0;
+    grid-column: 2;
+    width: 100%;
+    height: 100%;
+}
+
+.form-control {
+    font-size: 12px;
+}
+
+.input-group {
+    width: 100%;
+    height: 100%;
+}
+
+.bi {
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-bottom: 35px;
+}
+
+.more-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.info-margin {
+    margin-bottom: 35px;
+}
+
+.info-text {
     
 }
 /* footer-end */
