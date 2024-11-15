@@ -125,7 +125,7 @@ p {
     grid-row: 1 / span 6;
 }
 
-.hero-text-div {
+.hero-text-bg {
     color: white;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.7);
@@ -237,10 +237,21 @@ p {
     width: 95%;
 }
 
+
+.best-pop {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
 .best-img img{
     border-radius: 10px;
     aspect-ratio: 4/3;
     width: 100%;
+}
+
+.best-img img:hover {
+    transition: transform;
+    transform: scale(1.1);
 }
 
 .shop-btn {
@@ -386,3 +397,236 @@ p {
     margin-bottom: 35px;
 }
 /* footer-end */
+
+/* responsiveness-start */
+@media (max-width:992px){
+    #desktop-navbar {
+        display: none;
+    }
+}
+
+@media (min-width: 992px){
+    #mobile-navbar {
+        display: none;
+    }
+
+    .nav-item-flex {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 4em;
+        border-radius: 5px;
+        margin-left: 3em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    .nav-btns {
+        margin-bottom: 0;
+    }
+
+    .hero-grid {
+        display: grid;
+        grid-template-columns: 3.5em repeat(2, 1fr);
+        grid-template-rows: repeat(6, auto);
+    }
+
+    .hero-text-bg {
+        color: white;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        grid-column: 2 / span 1;
+        grid-row: 5;
+    }
+    
+    .hero-text {
+        margin: 0.5em 0em;
+        font-weight: 400;
+        font-size: 48px;
+    }
+
+    .sale-text {
+        font-weight: 400;
+        font-size: 24px;
+    }
+
+    .cooking-title {
+        margin-top: 6em;
+        margin-bottom: 2em;
+    }
+
+    .cooking-text {
+        font-weight: 700;
+        font-size: 64px;
+    }
+
+    .cooking-grid {
+        grid-template-columns: 3em repeat(4, 1fr) 3em;
+        grid-template-rows: repeat(1, auto);
+        gap: 40px;
+        margin: 0;
+        width: 100%;
+    }
+    
+    .cast-pot-desk {
+        grid-column: 2;
+    }
+
+    .cooking-txt {
+        font-weight: 600;
+        font-size: 36px;
+    }
+
+    .arrivals-txt {
+        font-weight: 700;
+        font-size: 64px;
+    }
+
+    .arrivals-title {
+        margin-top: 6em;
+        margin-bottom: 3em;
+    }
+
+    .arrivals-desk-grid {
+        display: grid;
+        grid-template-columns: 3em repeat(2, 1fr) 3em;
+        gap: 35px;
+    }
+
+    .arrivals-img {
+        margin: 0 0;
+        width: 100%;
+    }
+
+    .arriv-one {
+        grid-column: 2;
+    }
+
+    .fall-collect {
+        font-weight: 700;
+        font-size: 36px;
+    }
+
+    .fall-p {
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .fall-p-desk {
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .best-text {
+        font-weight: 700;
+        font-size: 64px;
+    }
+
+    .best-title {
+        margin-top: 4em;
+        margin-bottom: 3em;
+    }
+
+    .best-desk-grid {
+        display: grid;
+        grid-template-columns: 3em repeat(3, auto) 3em;
+        gap: 40px;
+    }
+
+    .card-1 {
+        grid-column: 2;
+    }
+
+    .card-text {
+        height: 100%;
+    }
+
+    .review-title {
+        margin-top: 9em;
+        margin-bottom: 3em;
+    }
+
+    .review-text {
+        font-weight: 700;
+        font-size: 64px;
+    }
+
+    .review-desk-grid {
+        display: grid;
+        grid-template-columns: 3em repeat(3, 1fr) 3em;
+        gap: 30px;
+    }
+
+    .background-image {
+        margin: 0;
+        margin-bottom: 7em;
+        width: 100%;
+    }
+
+    .david {
+        grid-column: 2;
+    }
+
+    .review {
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+    .review-p {
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .review-name {
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .footer-desk-grid {
+        display: grid;
+        grid-template-columns: 3em 6fr 5fr;
+        grid-template-rows: 6em auto 2em;
+    }
+
+    .foot-second-half {
+        grid-column: 3;
+        margin: 0 auto;
+        width: 50%;
+        grid-row: 2;
+    }
+
+    .foot-first-half {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .more-info-grid {
+        grid-template-columns: repeat(3, auto);
+    }
+
+    .foot-side-padding {
+        margin: 0 0;
+        width: 100%;
+    }
+    
+    .foot-top-padding {
+        padding-top: 0;
+    }
+    
+    .foot-bottom-padding {
+        padding-bottom: 0;
+    }
+
+    .email-grid {
+        grid-template-columns: 3fr 2fr;
+        margin: 0;
+        width: 100%;
+    }
+
+    .subscribe-btn {
+        width: 100%;
+    }
+}
+/* responsiveness-end */
