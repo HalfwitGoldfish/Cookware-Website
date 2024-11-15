@@ -2,6 +2,10 @@
 url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* font-sizes-start */
+body {
+    background-color: #ededed;
+}
+
 h1 {
     font-family: "Roboto", serif;
     font-weight: 700;
@@ -67,6 +71,36 @@ p {
 }
 /* general-end */
 
+/* navbar-start */
+.offcanvas {
+    width: 65% !important;
+}
+
+.nav-btns {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.nav-btns:hover {
+    color: #982a1c;
+    text-decoration: underline;
+}
+
+.sale-btn {
+    color: #B73A2A;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    text-decoration: none;
+}
+/* navbar-end */
+
 /* logo-start */
 .logo {
     width: 2.5em;
@@ -75,7 +109,6 @@ p {
 /* logo-end */
 
 /* hero-start */
-
 .hero-grid {
     display: grid;
     grid-template-columns: 0.5em repeat(2, 1fr);
@@ -357,7 +390,3 @@ p {
     
 }
 /* footer-end */
-
-.test {
-    width: 10px;
-}
