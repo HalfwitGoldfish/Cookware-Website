@@ -81,10 +81,20 @@ p {
     font-weight: 400;
     font-style: normal;
     font-size: 24px;
-    color: black;
+    color: #3F3C3C;
     text-decoration: none;
     margin-bottom: 20px;
 }
+
+.cookware:hover ~ .bakeware > .nav-btns{
+    color: black !important;
+}
+
+/* couldnt figure out how to fix this (sadness) */
+.cookware:has(~ .bakeware:hover > .nav-btns){
+    color: black !important;
+}
+/* -------------------------------------------- */
 
 .nav-btns:hover {
     color: #982a1c;
@@ -98,6 +108,11 @@ p {
     font-style: normal;
     font-size: 24px;
     text-decoration: none;
+}
+
+.sale-btn:hover {
+    color: #982a1c;
+    text-decoration: underline;
 }
 /* navbar-end */
 
@@ -395,6 +410,14 @@ p {
 
 .info-margin {
     margin-bottom: 35px;
+}
+
+.foot-text {
+    width: fit-content;
+}
+
+.foot-text:hover {
+    color: #82EBC5;
 }
 /* footer-end */
 
